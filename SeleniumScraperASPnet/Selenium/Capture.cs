@@ -37,22 +37,40 @@ namespace SeleniumScraperASPnet.Selenium
         private static (List<string> symbols, List<string> properties) GetTableHeads()
         {
             // acquire the stock symbols (vertical table header)
-            var headRows =
-                _webDriver.FindElements(
-                    By.XPath("//*[@id=\"scr-res-table\"]/table/tbody/tr[not(position() >5)]/td[2]/a"));
-            var symbols = new List<string>();
-            foreach (IWebElement r in headRows)
-                symbols.Add(r.Text);
+            var symbols = Symbols;
 
             // acquire the stock properties (horizontal table header)
-            var headCols =
-                _webDriver.FindElements(
-                    By.XPath("//*[@id=\"scr-res-table\"]/table/thead/tr/th[*]/span"));
-            var properties = new List<string>();
-            foreach (IWebElement c in headCols)
-                properties.Add(c.Text);
-            
+            var properties = Properties;
+
             return (symbols, properties);
+        }
+
+        private static List<string> Properties
+        {
+            get
+            {
+                var headCols =
+                    _webDriver.FindElements(
+                        By.XPath("//*[@id=\"scr-res-table\"]/table/thead/tr/th[*]/span"));
+                var properties = new List<string>();
+                foreach (IWebElement c in headCols)
+                    properties.Add(c.Text);
+                return properties;
+            }
+        }
+
+        private static List<string> Symbols
+        {
+            get
+            {
+                var headRows =
+                    _webDriver.FindElements(
+                        By.XPath("//*[@id=\"scr-res-table\"]/table/tbody/tr[not(position() >5)]/td[2]/a"));
+                var symbols = new List<string>();
+                foreach (IWebElement r in headRows)
+                    symbols.Add(r.Text);
+                return symbols;
+            }
         }
     }
 }
