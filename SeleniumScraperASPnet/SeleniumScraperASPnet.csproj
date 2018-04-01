@@ -44,9 +44,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Coin.cs" />
+    <Compile Include="Model\Coin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Selenium\Capture.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

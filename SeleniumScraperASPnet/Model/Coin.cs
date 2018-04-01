@@ -1,9 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text.RegularExpressions;
 using OpenQA.Selenium;
 
-namespace SeleniumScraperASP
+namespace SeleniumScraperASPnet.Model
 {
     internal class Coin
     {
@@ -18,14 +19,8 @@ namespace SeleniumScraperASP
         public double volume24h { get; set; }
         public double totalVolume24h { get; set; }
         public double circulatingSupply { get; set; }
-
-
-        public Coin(IReadOnlyList<string> properties, IReadOnlyList<IWebElement> values)
-        {
-            ExtractPropertiesValues(properties, values);
-        }
-
-        private void ExtractPropertiesValues(IReadOnlyList<string> properties, IReadOnlyList<IWebElement> values)
+        
+        public Coin(List<string> properties, ReadOnlyCollection<IWebElement> values)
         {
             var coinsProperties = new Dictionary<string, string>();
 
@@ -52,7 +47,6 @@ namespace SeleniumScraperASP
                 throw new Exception("Values Collation Error: Could not find Value");
             }
         }
-
         private static double ParseMagnitude(string s)
         {
             var input = Regex.Replace(s, "[^0-9.MBT]", "");
@@ -75,6 +69,5 @@ namespace SeleniumScraperASP
                         return double.Parse(input);
             }
         }
-
     }
 }
