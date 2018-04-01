@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e319b252-f511-4b7b-8850-bacc71dd1509" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Extractor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SeleniumScraperASPnet/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SeleniumScraperASPnet/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SeleniumScraperASPnet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SeleniumScraperASPnet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumScraperASPnet/Model/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumScraperASPnet/Model/Coin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumScraperASPnet/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumScraperASPnet/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Capture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Capture.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumScraperASPnet/SeleniumScraperASPnet.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumScraperASPnet/SeleniumScraperASPnet.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Extractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Extractor.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +17,8 @@
       <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <marker date="1522623006046" expanded="true" signature="6:82" ph="..." />
                 <marker date="1522623006046" expanded="true" signature="115:336" ph="{...}" />
@@ -37,33 +32,54 @@
       <file leaf-file-name="Capture.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Capture.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state>
               <folding>
-                <marker date="1522623006036" expanded="false" signature="6:121" ph="..." />
-                <marker date="1522623006036" expanded="true" signature="163:2522" ph="{...}" />
-                <marker date="1522623006036" expanded="true" signature="199:2520" ph="{...}" />
-                <marker date="1522623006036" expanded="true" signature="303:1220" ph="{...}" />
-                <marker date="1522623006036" expanded="true" signature="314:472" ph="/* ChromeOptions option = new ChromeOptions(); ... */" />
-                <marker date="1522623006036" expanded="true" signature="855:1183" ph="{...}" />
-                <marker date="1522623006036" expanded="true" signature="1308:1583" ph="{...}" />
-                <marker date="1522623006036" expanded="true" signature="1631:2046" ph="{...}" />
-                <marker date="1522623006036" expanded="true" signature="1657:2036" ph="{...}" />
-                <marker date="1522623006036" expanded="true" signature="2091:2514" ph="{...}" />
-                <marker date="1522623006036" expanded="true" signature="2117:2504" ph="{...}" />
+                <marker date="1522623224517" expanded="true" signature="6:121" ph="..." />
+                <marker date="1522623224517" expanded="true" signature="163:2522" ph="{...}" />
+                <marker date="1522623224517" expanded="true" signature="199:2520" ph="{...}" />
+                <marker date="1522623224517" expanded="true" signature="303:1220" ph="{...}" />
+                <marker date="1522623224517" expanded="true" signature="314:472" ph="/* ChromeOptions option = new ChromeOptions(); ... */" />
+                <marker date="1522623224517" expanded="true" signature="855:1183" ph="{...}" />
+                <marker date="1522623224517" expanded="true" signature="1308:1583" ph="{...}" />
+                <marker date="1522623224517" expanded="true" signature="1631:2046" ph="{...}" />
+                <marker date="1522623224517" expanded="true" signature="1657:2036" ph="{...}" />
+                <marker date="1522623224517" expanded="true" signature="2091:2514" ph="{...}" />
+                <marker date="1522623224517" expanded="true" signature="2117:2504" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Coin.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Extractor.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Extractor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+              <folding>
+                <marker date="1522625642419" expanded="true" signature="6:181" ph="..." />
+                <marker date="1522625642419" expanded="true" signature="223:2706" ph="{...}" />
+                <marker date="1522625642419" expanded="true" signature="261:2704" ph="{...}" />
+                <marker date="1522625642419" expanded="true" signature="369:1739" ph="{...}" />
+                <marker date="1522625642419" expanded="true" signature="547:648" ph="{...}" />
+                <marker date="1522625642419" expanded="true" signature="665:1572" ph="{...}" />
+                <marker date="1522625642419" expanded="true" signature="1603:1703" ph="{...}" />
+                <marker date="1522625642419" expanded="true" signature="1803:2698" ph="{...}" />
+                <marker date="1522625642419" expanded="true" signature="2018:2688" ph="{...}" />
+                <marker date="1522625642419" expanded="true" signature="2393:2489" ph="{...}" />
+                <marker date="1522625642419" expanded="true" signature="2529:2674" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Coin.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Model/Coin.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state relative-caret-position="240">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
-                <marker date="1522622415236" expanded="true" signature="37:564" ph="{...}" />
-                <marker date="1522622415236" expanded="true" signature="61:562" ph="{...}" />
+                <marker date="1522623224487" expanded="true" signature="37:564" ph="{...}" />
+                <marker date="1522623224487" expanded="true" signature="61:562" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -87,6 +103,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Model/Coin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Extractor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Capture.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -99,11 +116,12 @@
         <option value="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Extractors/SeleniumExtract.cs" />
         <option value="$PROJECT_DIR$/SeleniumScraperASPnet/SeleniumExtract.cs" />
         <option value="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Selenium.cs" />
-        <option value="$PROJECT_DIR$/SeleniumScraperASPnet/Model/Coin.cs" />
         <option value="$PROJECT_DIR$/SeleniumScraperASPnet/Model/ParseCoin.cs" />
         <option value="$PROJECT_DIR$/SeleniumScraperASPnet/Model/Extractor.cs" />
-        <option value="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Capture.cs" />
         <option value="$PROJECT_DIR$/SeleniumScraperASPnet/Program.cs" />
+        <option value="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Capture.cs" />
+        <option value="$PROJECT_DIR$/SeleniumScraperASPnet/Model/Coin.cs" />
+        <option value="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Extractor.cs" />
       </list>
     </option>
   </component>
@@ -215,11 +233,25 @@
       <option name="project" value="LOCAL" />
       <updated>1522620991702</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented Refactorization">
+      <created>1522623029118</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522623029118</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactored Extractor to Static">
+      <created>1522623242853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1522623242853</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6225000" />
+    <option name="totallyTimeSpent" value="8382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -234,66 +266,67 @@
     <frame x="960" y="0" width="960" height="1052" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="15" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010526" side_tool="true" weight="0.32912722" />
-      <window_info anchor="bottom" id="Unit Tests" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894738" weight="0.32912722" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32912722" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19102296" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="7" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.5010526" side_tool="true" weight="0.32912722" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49894738" weight="0.32912722" />
+      <window_info anchor="bottom" id="Version Control" order="17" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="NuGet" order="8" weight="0.32912722" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19102296" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="14" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32912722" />
+      <window_info anchor="bottom" id="NuGet" order="18" weight="0.32912722" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="19" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24946922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894738" weight="0.32912722" />
-      <window_info anchor="bottom" id="Unit Tests" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010526" side_tool="true" weight="0.32912722" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="20" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49894738" weight="0.32912722" />
+      <window_info anchor="bottom" id="Unit Tests" order="21" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="22" sideWeight="0.5010526" side_tool="true" weight="0.32912722" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="23" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32912722" />
+      <window_info anchor="bottom" id="NuGet" order="9" weight="0.32912722" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894738" weight="0.32912722" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49894738" weight="0.32912722" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19728601" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24946922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Unit Tests" order="9" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010526" side_tool="true" weight="0.32912722" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Build" order="13" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5010526" side_tool="true" weight="0.32912722" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="8" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Messages" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -306,7 +339,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Major Refactor" />
     <MESSAGE value="Extracted Table Heads to Respective Properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extracted Table Heads to Respective Properties" />
+    <MESSAGE value="Implemented Refactorization" />
+    <MESSAGE value="Refactored Extractor to Static" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored Extractor to Static" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Program.cs">
@@ -417,8 +452,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <marker date="1522623006046" expanded="true" signature="6:82" ph="..." />
             <marker date="1522623006046" expanded="true" signature="115:336" ph="{...}" />
@@ -430,31 +465,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Capture.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state>
           <folding>
-            <marker date="1522623006036" expanded="false" signature="6:121" ph="..." />
-            <marker date="1522623006036" expanded="true" signature="163:2522" ph="{...}" />
-            <marker date="1522623006036" expanded="true" signature="199:2520" ph="{...}" />
-            <marker date="1522623006036" expanded="true" signature="303:1220" ph="{...}" />
-            <marker date="1522623006036" expanded="true" signature="314:472" ph="/* ChromeOptions option = new ChromeOptions(); ... */" />
-            <marker date="1522623006036" expanded="true" signature="855:1183" ph="{...}" />
-            <marker date="1522623006036" expanded="true" signature="1308:1583" ph="{...}" />
-            <marker date="1522623006036" expanded="true" signature="1631:2046" ph="{...}" />
-            <marker date="1522623006036" expanded="true" signature="1657:2036" ph="{...}" />
-            <marker date="1522623006036" expanded="true" signature="2091:2514" ph="{...}" />
-            <marker date="1522623006036" expanded="true" signature="2117:2504" ph="{...}" />
+            <marker date="1522623224517" expanded="true" signature="6:121" ph="..." />
+            <marker date="1522623224517" expanded="true" signature="163:2522" ph="{...}" />
+            <marker date="1522623224517" expanded="true" signature="199:2520" ph="{...}" />
+            <marker date="1522623224517" expanded="true" signature="303:1220" ph="{...}" />
+            <marker date="1522623224517" expanded="true" signature="314:472" ph="/* ChromeOptions option = new ChromeOptions(); ... */" />
+            <marker date="1522623224517" expanded="true" signature="855:1183" ph="{...}" />
+            <marker date="1522623224517" expanded="true" signature="1308:1583" ph="{...}" />
+            <marker date="1522623224517" expanded="true" signature="1631:2046" ph="{...}" />
+            <marker date="1522623224517" expanded="true" signature="1657:2036" ph="{...}" />
+            <marker date="1522623224517" expanded="true" signature="2091:2514" ph="{...}" />
+            <marker date="1522623224517" expanded="true" signature="2117:2504" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Model/Coin.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        <state relative-caret-position="240">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <marker date="1522622415236" expanded="true" signature="37:564" ph="{...}" />
-            <marker date="1522622415236" expanded="true" signature="61:562" ph="{...}" />
+            <marker date="1522623224487" expanded="true" signature="37:564" ph="{...}" />
+            <marker date="1522623224487" expanded="true" signature="61:562" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Extractor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding>
+            <marker date="1522625642419" expanded="true" signature="6:181" ph="..." />
+            <marker date="1522625642419" expanded="true" signature="223:2706" ph="{...}" />
+            <marker date="1522625642419" expanded="true" signature="261:2704" ph="{...}" />
+            <marker date="1522625642419" expanded="true" signature="369:1739" ph="{...}" />
+            <marker date="1522625642419" expanded="true" signature="547:648" ph="{...}" />
+            <marker date="1522625642419" expanded="true" signature="665:1572" ph="{...}" />
+            <marker date="1522625642419" expanded="true" signature="1603:1703" ph="{...}" />
+            <marker date="1522625642419" expanded="true" signature="1803:2698" ph="{...}" />
+            <marker date="1522625642419" expanded="true" signature="2018:2688" ph="{...}" />
+            <marker date="1522625642419" expanded="true" signature="2393:2489" ph="{...}" />
+            <marker date="1522625642419" expanded="true" signature="2529:2674" ph="{...}" />
           </folding>
         </state>
       </provider>

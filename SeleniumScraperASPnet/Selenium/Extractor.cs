@@ -43,8 +43,6 @@ namespace SeleniumScraperASPnet.Selenium
         private static double ParseMagnitude(string s)
         {
             var input = Regex.Replace(s, "[^0-9.MBT]", "");
-            Regex regex = new Regex(@"[\\D.]+");
-            Match match = regex.Match(input);
 
             // M B and T for Millions, Billions, and Trillions. (eg 142.43B	=== 142,000,000,000)
             switch (input[(input.Length - 1)])
@@ -56,10 +54,14 @@ namespace SeleniumScraperASPnet.Selenium
                 case 'T':
                     return double.Parse(input.Replace("T", "")) * 1000000000000;
                 default:
-                    if (match.Success)
-                        throw new Exception("Magnitude Conversion Failure - Invalid Non-digit Characters");
-                    else
+                    try
+                    {
                         return double.Parse(input);
+                    }
+                    catch (Exception e)
+                    {
+                        throw new Exception("Magnitude Conversion Failure");                        
+                    }
             }
         }
     }
