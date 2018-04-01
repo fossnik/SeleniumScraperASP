@@ -7,7 +7,7 @@ using SeleniumScraperASPnet.Model;
 
 namespace SeleniumScraperASPnet.Selenium
 {
-    internal class Extractor
+    internal static class Extractor
     {
         public static Coin ParseCoin(List<string> properties, ReadOnlyCollection<IWebElement> values)
         {
@@ -21,16 +21,16 @@ namespace SeleniumScraperASPnet.Selenium
 
             try
             {
-                coin.symbol = coinsProperties["Symbol"];
-                coin.name = coinsProperties["Name"];
+                coin.Symbol = coinsProperties["Symbol"];
+                coin.Name = coinsProperties["Name"];
                 //this.price = double.Parse(coinsProperties[@"Price (Intraday)"].Replace(",", ""));
-                coin.change = double.Parse(coinsProperties["Change"].Replace("[%,]", ""));
+                coin.Change = double.Parse(coinsProperties["Change"].Replace("[%,]", ""));
                 //this.pChange = double.Parse(coinsProperties["% Change"].Replace("[%,]", ""));
-                coin.marketCap = ParseMagnitude(coinsProperties["Market Cap"]);
-                coin.volume = ParseMagnitude(coinsProperties["Volume in Currency (Since 0:00 UTC)"]);
-                coin.volume24h = ParseMagnitude(coinsProperties["Volume in Currency (24Hr)"]);
-                coin.totalVolume24h = ParseMagnitude(coinsProperties["Total Volume All Currencies (24Hr)"]);
-                coin.circulatingSupply = ParseMagnitude(coinsProperties["Circulating Supply"]);
+                coin.MarketCap = ParseMagnitude(coinsProperties["Market Cap"]);
+                coin.Volume = ParseMagnitude(coinsProperties["Volume in Currency (Since 0:00 UTC)"]);
+                coin.Volume24H = ParseMagnitude(coinsProperties["Volume in Currency (24Hr)"]);
+                coin.TotalVolume24H = ParseMagnitude(coinsProperties["Total Volume All Currencies (24Hr)"]);
+                coin.CirculatingSupply = ParseMagnitude(coinsProperties["Circulating Supply"]);
             }
             catch
             {

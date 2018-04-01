@@ -25,10 +25,10 @@ namespace SeleniumScraperASPnet.Selenium
             // create a list of all coins (with respective properties)
             for (var i = 1; i < symbols.Count + 1; i++)
             {
-                var XPath = "//*[@id=\"scr-res-table\"]/table/tbody/tr[" +
+                var xPath = "//*[@id=\"scr-res-table\"]/table/tbody/tr[" +
                             i + "]/td[position() >= 2 and not(position() > 11)]";
 
-                var results = _webDriver.FindElements(By.XPath(XPath));
+                var results = _webDriver.FindElements(By.XPath(xPath));
 
                 coins.Add(Extractor.ParseCoin(properties, results));
             }

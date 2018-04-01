@@ -2,16 +2,16 @@
 {
     public class Coin
     {
-        public int ID { get; set; }
-        public string symbol { get; set; }
-        public string name { get; set; }
-        public double price { get; set; }
-        public double change { get; set; }
-        public double pChange { get; set; }
-        public double marketCap { get; set; }
-        public double volume { get; set; }
-        public double volume24h { get; set; }
-        public double totalVolume24h { get; set; }
-        public double circulatingSupply { get; set; }
+        public int Id { get; set; }
+        public string Symbol { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public double Change { get; set; }
+        public double PChange { get; set; }
+        public double MarketCap { get; set; }
+        public double Volume { get; set; }
+        public double Volume24H { get; set; }
+        public double TotalVolume24H { get; set; }
+        public double CirculatingSupply { get; set; }
     }
 }
