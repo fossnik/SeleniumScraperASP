@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using SeleniumScraperASPnet.Model;
 
 namespace SeleniumScraperASPnet
@@ -10,10 +8,9 @@ namespace SeleniumScraperASPnet
     {
         public static void Main(string[] args)
         {
-            Selenium.Capture.SeleniumCapture();
+            List<Coin> snapshot = Selenium.Capture.CompileSnapshot();
 
             Environment.Exit(0);
-
         }
     }
 }

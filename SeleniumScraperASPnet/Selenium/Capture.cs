@@ -9,7 +9,7 @@ namespace SeleniumScraperASPnet.Selenium
     {
         private static IWebDriver _webDriver;
 
-        public static void SeleniumCapture()
+        public static List<Coin> CompileSnapshot()
         {
 //            ChromeOptions option = new ChromeOptions();
 //            option.AddArgument("--headless");
@@ -30,8 +30,10 @@ namespace SeleniumScraperASPnet.Selenium
 
                 var results = _webDriver.FindElements(By.XPath(XPath));
 
-                coins.Add(new Coin(properties, results));
+                coins.Add(Extractor.ParseCoin(properties, results));
             }
+
+            return coins;
         }
 
         private static (List<string> symbols, List<string> properties) GetTableHeads()
