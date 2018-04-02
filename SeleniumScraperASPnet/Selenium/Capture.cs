@@ -11,10 +11,9 @@ namespace SeleniumScraperASPnet.Selenium
 
         public static List<Coin> CompileSnapshot()
         {
-//            ChromeOptions option = new ChromeOptions();
-//            option.AddArgument("--headless");
-//            _webDriver = new ChromeDriver(option);
-            _webDriver = new ChromeDriver();
+            ChromeOptions option = new ChromeOptions();
+            option.AddArgument("--headless");
+            _webDriver = new ChromeDriver(option);
 
             _webDriver.Navigate().GoToUrl("https://finance.yahoo.com/cryptocurrencies?offset=0&count=150");
 
@@ -67,7 +66,7 @@ namespace SeleniumScraperASPnet.Selenium
             {
                 var headRows =
                     _webDriver.FindElements(
-                        By.XPath("//*[@id=\"scr-res-table\"]/table/tbody/tr[not(position() >5)]/td[2]/a"));
+                        By.XPath("//*[@id=\"scr-res-table\"]/table/tbody/tr[*]/td[2]/a"));
                 var symbols = new List<string>();
                 foreach (IWebElement r in headRows)
                     symbols.Add(r.Text);
