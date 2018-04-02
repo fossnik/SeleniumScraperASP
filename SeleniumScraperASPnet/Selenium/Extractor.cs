@@ -58,7 +58,7 @@ namespace SeleniumScraperASPnet.Selenium
                     {
                         return double.Parse(input);
                     }
-                    catch (Exception e)
+                    catch
                     {
                         throw new Exception("Magnitude Conversion Failure");                        
                     }
