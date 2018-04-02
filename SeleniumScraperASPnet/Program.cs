@@ -10,6 +10,9 @@ namespace SeleniumScraperASPnet
         {
             List<Coin> snapshot = Selenium.Capture.CompileSnapshot();
 
+            foreach (var coinObject in snapshot)
+                Console.WriteLine(coinObject.Name);
+
             Environment.Exit(0);
         }
     }
