@@ -23,9 +23,9 @@ namespace SeleniumScraperASPnet.Selenium
             {
                 coin.Symbol = coinsProperties["Symbol"];
                 coin.Name = coinsProperties["Name"];
-                //this.price = double.Parse(coinsProperties[@"Price (Intraday)"].Replace(",", ""));
-                coin.Change = double.Parse(coinsProperties["Change"].Replace("[%,]", ""));
-                //this.pChange = double.Parse(coinsProperties["% Change"].Replace("[%,]", ""));
+                coin.Price = double.Parse(coinsProperties["Price (Intraday)"]);
+                coin.Change = double.Parse(coinsProperties["Change"].Replace("%", ""));
+                coin.PChange = double.Parse(coinsProperties["% Change"].Replace("%", ""));
                 coin.MarketCap = ParseMagnitude(coinsProperties["Market Cap"]);
                 coin.Volume = ParseMagnitude(coinsProperties["Volume in Currency (Since 0:00 UTC)"]);
                 coin.Volume24H = ParseMagnitude(coinsProperties["Volume in Currency (24Hr)"]);
