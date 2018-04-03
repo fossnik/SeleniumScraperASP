@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e319b252-f511-4b7b-8850-bacc71dd1509" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SeleniumScraperASPnet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SeleniumScraperASPnet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Scraper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Scraper.cs" afterDir="false" />
-    </list>
+    <list default="true" id="e319b252-f511-4b7b-8850-bacc71dd1509" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +29,8 @@
       <file leaf-file-name="Scraper.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Scraper.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="26" column="81" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
+            <state relative-caret-position="195">
+              <caret line="25" selection-start-line="25" selection-end-line="26" selection-end-column="103" />
               <folding>
                 <marker date="1522778322913" expanded="true" signature="6:135" ph="..." />
                 <marker date="1522778322913" expanded="true" signature="177:2719" ph="{...}" />
@@ -227,7 +224,7 @@
       <workItem from="1522693088366" duration="4545000" />
       <workItem from="1522700191665" duration="1239000" />
       <workItem from="1522714997151" duration="1942000" />
-      <workItem from="1522775905556" duration="2417000" />
+      <workItem from="1522775905556" duration="3240000" />
     </task>
     <task id="LOCAL-00001" summary="Major Refactor">
       <created>1522620868029</created>
@@ -306,11 +303,25 @@
       <option name="project" value="LOCAL" />
       <updated>1522776915837</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Implemented">
+      <created>1522778436145</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1522778436145</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Implemented Exception for Page Access Fault">
+      <created>1522778500668</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1522778500668</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22583000" />
+    <option name="totallyTimeSpent" value="23406000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,7 +334,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="right" id="Errors In Solution" order="4" />
@@ -331,7 +341,7 @@
       <window_info anchor="bottom" id="Unit Tests" order="21" />
       <window_info anchor="bottom" id="Database Changes" order="23" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="20" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49894738" visible="true" weight="0.328125" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49894738" weight="0.328125" />
       <window_info anchor="bottom" id="Terminal" order="23" />
       <window_info anchor="bottom" id="NuGet" order="18" weight="0.32912722" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.105417274" />
@@ -394,7 +404,9 @@
     <MESSAGE value="Implemented Console Output" />
     <MESSAGE value="Eliminated Limit on Symbols" />
     <MESSAGE value="Refactored: Capture -&gt; Scraper&#10;Implemented Constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored: Capture -&gt; Scraper&#10;Implemented Constructor" />
+    <MESSAGE value="Implemented" />
+    <MESSAGE value="Implemented Exception for Page Access Fault" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Exception for Page Access Fault" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -952,8 +964,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SeleniumScraperASPnet/Selenium/Scraper.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="26" column="81" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
+        <state relative-caret-position="195">
+          <caret line="25" selection-start-line="25" selection-end-line="26" selection-end-column="103" />
           <folding>
             <marker date="1522778322913" expanded="true" signature="6:135" ph="..." />
             <marker date="1522778322913" expanded="true" signature="177:2719" ph="{...}" />
