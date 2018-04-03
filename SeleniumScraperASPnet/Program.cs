@@ -8,7 +8,7 @@ namespace SeleniumScraperASPnet
     {
         public static void Main(string[] args)
         {
-            List<Coin> snapshot = Selenium.Capture.CompileSnapshot();
+            List<Coin> snapshot = Selenium.Scraper.CompileSnapshot();
 
             foreach (var coinObject in snapshot)
                 Console.WriteLine(coinObject.Name);

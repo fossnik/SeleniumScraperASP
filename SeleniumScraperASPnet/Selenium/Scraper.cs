@@ -5,17 +5,20 @@ using SeleniumScraperASPnet.Model;
 
 namespace SeleniumScraperASPnet.Selenium
 {
-    internal static class Capture
+    internal static class Scraper
     {
-        private static IWebDriver _webDriver;
+        private static readonly IWebDriver WebDriver;
 
-        public static List<Coin> CompileSnapshot()
+        static Scraper()
         {
             ChromeOptions option = new ChromeOptions();
             option.AddArgument("--headless");
-            _webDriver = new ChromeDriver(option);
+            WebDriver = new ChromeDriver(option);
+        }
 
-            _webDriver.Navigate().GoToUrl("https://finance.yahoo.com/cryptocurrencies?offset=0&count=150");
+        public static List<Coin> CompileSnapshot()
+        {
+            WebDriver.Navigate().GoToUrl("https://finance.yahoo.com/cryptocurrencies?offset=0&count=150");
 
             var (symbols, properties) = GetTableHeads();
 
@@ -27,7 +30,7 @@ namespace SeleniumScraperASPnet.Selenium
                 var xPath = "//*[@id=\"scr-res-table\"]/table/tbody/tr[" +
                             i + "]/td[position() >= 2 and not(position() > 11)]";
 
-                var results = _webDriver.FindElements(By.XPath(xPath));
+                var results = WebDriver.FindElements(By.XPath(xPath));
 
                 coins.Add(Extractor.ParseCoin(properties, results));
             }
@@ -51,7 +54,7 @@ namespace SeleniumScraperASPnet.Selenium
             get
             {
                 var headCols =
-                    _webDriver.FindElements(
+                    WebDriver.FindElements(
                         By.XPath("//*[@id=\"scr-res-table\"]/table/thead/tr/th[*]/span"));
                 var properties = new List<string>();
                 foreach (IWebElement c in headCols)
@@ -65,7 +68,7 @@ namespace SeleniumScraperASPnet.Selenium
             get
             {
                 var headRows =
-                    _webDriver.FindElements(
+                    WebDriver.FindElements(
                         By.XPath("//*[@id=\"scr-res-table\"]/table/tbody/tr[*]/td[2]/a"));
                 var symbols = new List<string>();
                 foreach (IWebElement r in headRows)
