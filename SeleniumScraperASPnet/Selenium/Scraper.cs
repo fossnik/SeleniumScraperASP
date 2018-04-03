@@ -13,7 +13,7 @@ namespace SeleniumScraperASPnet.Selenium
         static Scraper()
         {
             ChromeOptions option = new ChromeOptions();
-            option.AddArgument("--headless");
+            option.AddArguments("--headless", "--disable-java");
             WebDriver = new ChromeDriver(option);
         }
 
@@ -31,10 +31,10 @@ namespace SeleniumScraperASPnet.Selenium
             var coins = new List<Coin>();
 
             // create a list of all coins (with respective properties)
-            for (var i = 1; i < symbols.Count + 1; i++)
+            for (var row = 1; row < symbols.Count + 1; row++)
             {
                 var xPath = "//*[@id=\"scr-res-table\"]/table/tbody/tr[" +
-                            i + "]/td[position() >= 2 and not(position() > 11)]";
+                            row + "]/td[position() >= 2 and not(position() > 11)]";
 
                 var results = WebDriver.FindElements(By.XPath(xPath));
 
