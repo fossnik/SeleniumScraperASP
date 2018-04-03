@@ -13,7 +13,7 @@ namespace SeleniumScraperASPnet.Selenium
         static Scraper()
         {
             ChromeOptions option = new ChromeOptions();
-            option.AddArguments("--headless", "--disable-java");
+            option.AddArguments("--headless", "--disable-javascript");
             WebDriver = new ChromeDriver(option);
         }
 
