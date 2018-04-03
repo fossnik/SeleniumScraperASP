@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using SeleniumScraperASPnet.Model;
@@ -18,7 +19,12 @@ namespace SeleniumScraperASPnet.Selenium
 
         public static List<Coin> CompileSnapshot()
         {
-            WebDriver.Navigate().GoToUrl("https://finance.yahoo.com/cryptocurrencies?offset=0&count=150");
+            const string url = "https://finance.yahoo.com/cryptocurrencies?offset=0&count=150";
+            
+            WebDriver.Navigate().GoToUrl(url);
+
+            if (WebDriver.Title == string.Empty)
+                throw new Exception("[Null Page Title] Probable Page-Access Fault\n- " + url + " -\n");
 
             var (symbols, properties) = GetTableHeads();
 
