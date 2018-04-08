@@ -8,6 +8,9 @@ namespace SeleniumScraperASPnet
     {
         public static void Main(string[] args)
         {
+            // Linux Environment:
+            // please note that it is necessary to set the environment varible "TERM" to "xterm"
+            
             List<Coin> snapshot = Selenium.Scraper.CompileSnapshot();
 
             foreach (var coinObject in snapshot)
