@@ -1,0 +1,32 @@
+﻿@using SeleniumScraperASPnet.Model
+@model System.Linq.IOrderedQueryable<SeleniumScraperASPnet.Model.MarketSnapshot>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>All Snapshots</title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+            All Snapshots
+            </thead>
+            <tr>
+                <td>Shapshot ID</td>
+                <td>Shapshot DateTime</td>
+            </tr>
+            <tbody>
+            @foreach (MarketSnapshot marketSnapshot in Model)
+            {
+                <tr>
+                    <td>@marketSnapshot.SnapId</td>
+                    <td>@marketSnapshot.SnapTime</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
