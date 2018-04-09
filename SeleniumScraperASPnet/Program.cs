@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using SeleniumScraperASPnet.Model;
 
 namespace SeleniumScraperASPnet
@@ -13,8 +14,21 @@ namespace SeleniumScraperASPnet
             
             List<Coin> snapshot = Selenium.Scraper.CompileSnapshot();
 
-            foreach (var coinObject in snapshot)
-                Console.WriteLine(coinObject.Name);
+            using (var db = new SnapshotContext())
+            {
+                // build dbContext object from the list of coin objects procured via selenium
+                var marketSnapshot = new MarketSnapshot {Coins = snapshot};
+
+                // append to database
+                db.MarketSnapshots.Add(marketSnapshot);
+                db.SaveChanges();
+
+                var query = from b in db.MarketSnapshots orderby b.SnapId select b;
+                foreach (var marketSnapshot1 in query)
+                {
+                    Console.WriteLine(marketSnapshot1.SnapId);
+                }
+            }
 
             Environment.Exit(0);
         }
