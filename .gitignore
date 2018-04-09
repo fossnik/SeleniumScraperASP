@@ -1,3 +1,4 @@
 packages/
 bin/
 obj/
+/.vs/SeleniumScraperASPnet/v15/Server/sqlite3
