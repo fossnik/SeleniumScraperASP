@@ -13,5 +13,9 @@
         public double Volume24H { get; set; }
         public double TotalVolume24H { get; set; }
         public double CirculatingSupply { get; set; }
+
+        // navigation properties
+        public int SnapId { get; set; }
+        public virtual MarketSnapshot MarketSnapshot { get; set; }
     }
 }
