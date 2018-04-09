@@ -1,4 +1,6 @@
-﻿namespace SeleniumScraperASPnet.Model
+﻿using System.Data.Entity;
+
+namespace SeleniumScraperASPnet.Model
 {
     class SnapshotContext : DbContext
     {
