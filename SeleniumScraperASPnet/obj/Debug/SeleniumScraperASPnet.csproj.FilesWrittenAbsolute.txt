@@ -1,8 +1,0 @@
-/home/seth/RiderProjects/SeleniumScraperASPnet/SeleniumScraperASPnet/obj/Debug/.NETFramework,Version=v4.7.1.AssemblyAttribute.cs
-/home/seth/RiderProjects/SeleniumScraperASPnet/SeleniumScraperASPnet/bin/Debug/chromedriver
-/home/seth/RiderProjects/SeleniumScraperASPnet/SeleniumScraperASPnet/bin/Debug/SeleniumScraperASPnet.pdb
-/home/seth/RiderProjects/SeleniumScraperASPnet/SeleniumScraperASPnet/bin/Debug/SeleniumScraperASPnet.exe
-/home/seth/RiderProjects/SeleniumScraperASPnet/SeleniumScraperASPnet/obj/Debug/SeleniumScraperASPnet.exe
-/home/seth/RiderProjects/SeleniumScraperASPnet/SeleniumScraperASPnet/obj/Debug/SeleniumScraperASPnet.pdb
-/home/seth/RiderProjects/SeleniumScraperASPnet/SeleniumScraperASPnet/bin/Debug/WebDriver.dll
-/home/seth/RiderProjects/SeleniumScraperASPnet/SeleniumScraperASPnet/bin/Debug/WebDriver.Support.dll
