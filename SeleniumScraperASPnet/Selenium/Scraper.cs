@@ -44,6 +44,11 @@ namespace SeleniumScraperASPnet.Selenium
             return coins;
         }
 
+        public static void QuitWebDriver()
+        {
+            WebDriver.Quit();
+        }
+
         private static (List<string> symbols, List<string> properties) GetTableHeads()
         {
             // acquire the stock symbols (vertical table header)
