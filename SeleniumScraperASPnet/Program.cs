@@ -17,7 +17,11 @@ namespace SeleniumScraperASPnet
             using (var db = new SnapshotContext())
             {
                 // build dbContext object from the list of coin objects procured via selenium
-                var marketSnapshot = new MarketSnapshot {Coins = snapshot};
+                var marketSnapshot = new MarketSnapshot
+                {
+                    Coins = snapshot,
+                    SnapTime = DateTime.Now
+                };
 
                 // append to database
                 db.MarketSnapshots.Add(marketSnapshot);
