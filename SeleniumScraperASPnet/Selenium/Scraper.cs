@@ -20,7 +20,7 @@ namespace SeleniumScraperASPnet.Selenium
         public static List<Coin> CompileSnapshot()
         {
             const string url = "https://finance.yahoo.com/cryptocurrencies?offset=0&count=150";
-            
+
             WebDriver.Navigate().GoToUrl(url);
 
             if (WebDriver.Title == string.Empty)
@@ -42,6 +42,11 @@ namespace SeleniumScraperASPnet.Selenium
             }
 
             return coins;
+        }
+
+        public static void QuitWebDriver()
+        {
+            WebDriver.Quit();
         }
 
         private static (List<string> symbols, List<string> properties) GetTableHeads()

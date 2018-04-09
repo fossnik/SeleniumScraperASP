@@ -11,8 +11,19 @@ namespace SeleniumScraperASPnet
         {
             // Linux Environment:
             // please note that it is necessary to set the environment varible "TERM" to "xterm"
-            
-            List<Coin> snapshot = Selenium.Scraper.CompileSnapshot();
+
+            List<Coin> snapshot;
+            try
+            {
+                snapshot = Selenium.Scraper.CompileSnapshot();
+                Selenium.Scraper.QuitWebDriver();
+            }
+            catch (Exception e)
+            {
+                Selenium.Scraper.QuitWebDriver();
+                Console.WriteLine(e);
+                throw;
+            }
 
             using (var db = new SnapshotContext())
             {
