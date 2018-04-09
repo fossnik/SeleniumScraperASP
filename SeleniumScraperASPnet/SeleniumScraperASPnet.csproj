@@ -52,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\SnapshotContext.cs" />
     <Compile Include="Model\Coin.cs" />
     <Compile Include="Model\MarketSnapshot.cs" />
     <Compile Include="Program.cs" />
