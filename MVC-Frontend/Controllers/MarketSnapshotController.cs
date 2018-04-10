@@ -9,14 +9,21 @@ namespace MVC_Frontend.Controllers
 {
     public class MarketSnapshotController : Controller
     {
+        private readonly SnapshotContext _context;
+
+        public MarketSnapshotController()
+        {
+            _context = new SnapshotContext();
+        }
+
         // GET: All MarketSnapshot
-        public ActionResult Index()
+        public ActionResult ListSnapshots()
         {
             using (var db = new SnapshotContext())
             {
-                var query = from marketSnapshots in db.MarketSnapshots orderby marketSnapshots.SnapId select marketSnapshots;
+                var snapshots = _context.MarketSnapshots.ToList();
 
-                return View(query);
+                return View(snapshots);
             }
         }
 

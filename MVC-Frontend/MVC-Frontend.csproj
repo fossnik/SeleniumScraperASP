@@ -197,7 +197,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\MarketSnapshot\Index.cshtml" />
+    <Content Include="Views\MarketSnapshot\ListSnapshots.cshtml" />
     <Content Include="Views\MarketSnapshot\CompileSnapshot.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
