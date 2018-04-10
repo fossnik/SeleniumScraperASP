@@ -44,6 +44,7 @@ namespace SeleniumScraperASPnet
                 db.SaveChanges();
             }
 
+            Console.ReadKey();
             Environment.Exit(0);
         }
     }
