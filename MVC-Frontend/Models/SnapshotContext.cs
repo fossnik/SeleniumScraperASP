@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace SeleniumScraperASPnet.Model
+namespace MVC_Frontend.Models
 {
     class SnapshotContext : DbContext
     {

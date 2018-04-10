@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace SeleniumScraperASPnet.Model
+namespace MVC_Frontend.Models
 {
     public class MarketSnapshot
     {

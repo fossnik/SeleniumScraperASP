@@ -1,4 +1,4 @@
-﻿namespace SeleniumScraperASPnet.Model
+﻿namespace MVC_Frontend.Models
 {
     public class Coin
     {
