@@ -9,17 +9,18 @@ namespace MVC_Frontend.Controllers
 {
     public class MarketSnapshotController : Controller
     {
-        // GET: MarketSnapshot
+        // GET: All MarketSnapshot
         public ActionResult Index()
         {
             using (var db = new SnapshotContext())
             {
-                var query = from s in db.MarketSnapshots orderby s.SnapId select s;
+                var query = from marketSnapshots in db.MarketSnapshots orderby marketSnapshots.SnapId select marketSnapshots;
 
                 return View(query);
             }
         }
 
+        // Run Selenium
         public ActionResult CompileSnapshot()
         {
             List<Coin> snapshot;
