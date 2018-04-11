@@ -7,11 +7,11 @@ using MVC_Frontend.Models.Selenium;
 
 namespace MVC_Frontend.Controllers
 {
-    public class MarketSnapshotController : Controller
+    public class SnapshotsController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public MarketSnapshotController()
+        public SnapshotsController()
         {
             _context = new ApplicationDbContext();
         }
@@ -22,7 +22,7 @@ namespace MVC_Frontend.Controllers
         }
 
         // GET: All MarketSnapshot
-        public ActionResult ListSnapshots()
+        public ViewResult Index()
         {
             var snapshots = _context.MarketSnapshots.ToList();
 
