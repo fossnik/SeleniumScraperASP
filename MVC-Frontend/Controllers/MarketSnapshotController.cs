@@ -9,11 +9,16 @@ namespace MVC_Frontend.Controllers
 {
     public class MarketSnapshotController : Controller
     {
-        private readonly SnapshotContext _context;
+        private readonly ApplicationDbContext _context;
 
         public MarketSnapshotController()
         {
-            _context = new SnapshotContext();
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
         }
 
         // GET: All MarketSnapshot
@@ -43,7 +48,7 @@ namespace MVC_Frontend.Controllers
                 }
             }
 
-            using (var db = new SnapshotContext())
+            using (var db = new ApplicationDbContext())
             {
                 // build dbContext object from the list of coin objects procured via selenium
                 var marketSnapshot = new MarketSnapshot
