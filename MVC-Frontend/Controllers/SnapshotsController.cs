@@ -29,6 +29,16 @@ namespace MVC_Frontend.Controllers
             return View(snapshots);
         }
 
+        public ActionResult Details(int id)
+        {
+            var snapshot = _context.MarketSnapshots.SingleOrDefault(c => c.SnapId == id);
+
+            if (snapshot == null)
+                return HttpNotFound();
+
+            return View(snapshot);
+        }
+
         // Run Selenium
         public ActionResult CompileSnapshot()
         {

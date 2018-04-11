@@ -1,0 +1,25 @@
+﻿@model MVC_Frontend.Models.MarketSnapshot
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MarketSnapshot</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SnapTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SnapTime)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
