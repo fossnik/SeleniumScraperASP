@@ -19,12 +19,9 @@ namespace MVC_Frontend.Controllers
         // GET: All MarketSnapshot
         public ActionResult ListSnapshots()
         {
-            using (var db = new SnapshotContext())
-            {
-                var snapshots = _context.MarketSnapshots.ToList();
+            var snapshots = _context.MarketSnapshots.ToList();
 
-                return View(snapshots);
-            }
+            return View(snapshots);
         }
 
         // Run Selenium
