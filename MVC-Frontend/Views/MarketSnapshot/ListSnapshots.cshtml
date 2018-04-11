@@ -1,6 +1,10 @@
 ﻿@using MVC_Frontend.Models
 @model List<MarketSnapshot>
-
+<style>
+    th {
+        text-align: center
+    }
+</style>
 <!DOCTYPE html>
 
 <html>
@@ -9,18 +13,18 @@
 </head>
 <body>
     <div>
-        <table>
+        <table class="table table-bordered table-hover">
             <thead>
-            All Snapshots
-            </thead>
+            <tr><th colspan="2">Snapshots List</th></tr>
             <tr>
                 <td>Shapshot ID</td>
                 <td>Shapshot DateTime</td>
             </tr>
+            </thead>
             <tbody>
             @foreach (MarketSnapshot marketSnapshot in Model)
             {
-                <tr>
+                <tr href="/MarketSnapshot/@marketSnapshot.SnapId">
                     <td>@marketSnapshot.SnapId</td>
                     <td>@marketSnapshot.SnapTime</td>
                 </tr>
