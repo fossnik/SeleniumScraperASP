@@ -33,19 +33,16 @@ namespace MVC_Frontend.Controllers
         public ActionResult CompileSnapshot()
         {
             List<Coin> snapshot;
-            using (MarketSnapshot)
+            try
             {
-                try
-                {
-                    snapshot = Scraper.CompileSnapshot();
-                    Scraper.QuitWebDriver();
-                }
-                catch (Exception e)
-                {
-                    Scraper.QuitWebDriver();
-                    Console.WriteLine(e);
-                    throw;
-                }
+                snapshot = Scraper.CompileSnapshot();
+                Scraper.QuitWebDriver();
+            }
+            catch (Exception e)
+            {
+                Scraper.QuitWebDriver();
+                Console.WriteLine(e);
+                throw;
             }
 
             using (var db = new ApplicationDbContext())
@@ -64,7 +61,5 @@ namespace MVC_Frontend.Controllers
 
             return View(snapshot);
         }
-
-        public IDisposable MarketSnapshot { get; set; }
     }
 }
