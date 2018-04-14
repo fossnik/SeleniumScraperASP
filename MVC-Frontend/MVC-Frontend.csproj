@@ -159,7 +159,7 @@
     <Compile Include="Models\MarketSnapshot.cs" />
     <Compile Include="Models\Selenium\Extractor.cs" />
     <Compile Include="Models\Selenium\Scraper.cs" />
-    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\MarketSnapshotContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
