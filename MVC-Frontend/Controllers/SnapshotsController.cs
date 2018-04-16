@@ -16,11 +16,6 @@ namespace MVC_Frontend.Controllers
             _context = new MarketSnapshotContext();
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            _context.Dispose();
-        }
-
         // GET: All MarketSnapshot
         public ViewResult Index()
         {
