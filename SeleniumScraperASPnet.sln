@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumScraperASPnet", "SeleniumScraperASPnet\SeleniumScraperASPnet.csproj", "{284FE725-8D68-40F3-8E97-062D286F5361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-Frontend", "MVC-Frontend\MVC-Frontend.csproj", "{F570C44D-A23C-42D2-9C55-E8B5465756CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,15 @@ Global
 		{284FE725-8D68-40F3-8E97-062D286F5361}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{284FE725-8D68-40F3-8E97-062D286F5361}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{284FE725-8D68-40F3-8E97-062D286F5361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F570C44D-A23C-42D2-9C55-E8B5465756CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F570C44D-A23C-42D2-9C55-E8B5465756CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F570C44D-A23C-42D2-9C55-E8B5465756CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F570C44D-A23C-42D2-9C55-E8B5465756CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {909164A7-16C5-4F8B-B551-279F3B74330C}
 	EndGlobalSection
 EndGlobal

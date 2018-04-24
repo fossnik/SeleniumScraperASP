@@ -4,3 +4,5 @@ obj/
 /.vs/SeleniumScraperASPnet/v15/Server/sqlite3
 /.vs/SeleniumScraperASPnet/v15/.suo
 /MVC-Frontend/App_Data
+/.vs/SeleniumScraperASP/v15
+/.vs

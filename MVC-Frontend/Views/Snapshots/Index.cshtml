@@ -1,0 +1,41 @@
+﻿@using MVC_Frontend.Models
+@model List<MarketSnapshot>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    th {
+        text-align: center
+    }
+</style>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>All Snapshots</title>
+</head>
+<body>
+    <div>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr><th colspan="2">Snapshots List</th></tr>
+                <tr>
+                    <td>ID</td>
+                    <td>DateTime</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (MarketSnapshot marketSnapshot in Model)
+                {
+                <tr>
+                    <td>@marketSnapshot.SnapId</td>
+                    <td>@marketSnapshot.SnapTime</td>
+                    <td><a href="Details/@marketSnapshot.SnapId">View</a></td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

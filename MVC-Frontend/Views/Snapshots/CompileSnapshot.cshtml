@@ -1,0 +1,24 @@
+﻿@using MVC_Frontend.Models
+@model List<MVC_Frontend.Models.Coin>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Market SnapShot</title>
+</head>
+<body>
+<div>
+    <table>
+        @{
+            foreach (var coin in Model)
+            {
+                <tr>
+                    <td>@coin.Name</td>
+                    <td>@coin.Price</td>
+                </tr>
+            };
+        }
+    </table>
+</div>
+</body>
+</html>
